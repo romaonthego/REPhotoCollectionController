@@ -50,9 +50,7 @@
 {
     CGContextRef context = UIGraphicsGetCurrentContext();
     CGContextSetLineWidth(context, 1);
-    
     CGContextSetStrokeColorWithColor(context, _borderColor.CGColor);
-    
     CGContextStrokeRect(context, rect);
 }
 

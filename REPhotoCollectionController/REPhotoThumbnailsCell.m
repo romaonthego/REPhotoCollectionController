@@ -37,7 +37,7 @@
     if (self) {
         _thumbnailViewClass = thumbnailViewClass;
         for (int i=0; i < 4; i++) {
-            REPhotoThumbnailView *thumbnailView = [[[_thumbnailViewClass class] alloc] initWithFrame:CGRectMake(6+(72 * i + 6*i), 6, 72, 72)];
+            REPhotoThumbnailView *thumbnailView = [[[_thumbnailViewClass class] alloc] initWithFrame:CGRectMake(6+(72 * i + 6 * i), 6, 72, 72)];
             [thumbnailView setHidden:YES];
             thumbnailView.tag = i;
             [self addSubview:thumbnailView];
