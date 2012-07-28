@@ -155,13 +155,13 @@
     
     REPhotoGroup *group = (REPhotoGroup *)[ds objectAtIndex:indexPath.section];
     
-    int start = indexPath.row * 4;
-    int end = start + 4;
-    if (end > [group.items count])
-        end = [group.items count];
+    int startIndex = indexPath.row * 4;
+    int endIndex = startIndex + 4;
+    if (endIndex > [group.items count])
+        endIndex = [group.items count];
     
     [cell removeAllPhotos];
-    for (int i=start; i < end; i++) {
+    for (int i = startIndex; i < endIndex; i++) {
         NSObject <REPhotoObjectProtocol> *photo = [group.items objectAtIndex:i];
         [cell addPhoto:photo];
     }
