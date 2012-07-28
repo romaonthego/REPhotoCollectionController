@@ -40,7 +40,7 @@ To use `REPhotoCollectionController` copy the source code into your project then
 @end
 ```
 * Implement the methods required by the protocol REPhotoObjectProtocol and implement the optional methods if needed.
-* Add a new class to your project called "ThumbnailView", its parent class MUST be **REPhotoThumbnailView**. This class will be used a photo thumnbail representation view, you can customize it however you want, e.g. use different libraries for remote image fetching, etc. Sample goes below:
+* Add a new class to your project called "ThumbnailView", its parent class MUST be **REPhotoThumbnailView**. This class will be used a photo thumbnail representation view, you can customize it however you want, e.g. use different libraries for remote image fetching, etc. Sample goes below:
 
 ```objective-c
 #import "ThumbnailView.h"
