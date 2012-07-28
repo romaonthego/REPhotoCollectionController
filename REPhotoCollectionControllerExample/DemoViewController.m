@@ -72,14 +72,16 @@
     NSMutableArray *datasource = [[NSMutableArray alloc] init];
     ALAssetsLibrary *library = [[ALAssetsLibrary alloc] init];
     [library enumerateGroupsWithTypes:ALAssetsGroupSavedPhotos usingBlock:^(ALAssetsGroup *group, BOOL *stop) {
-        if (group != nil) {
+        if (group) {
             [group setAssetsFilter:[ALAssetsFilter allPhotos]];
             [group enumerateAssetsUsingBlock:^(ALAsset *result, NSUInteger index, BOOL *stop) {
-                Photo *photo = [[Photo alloc] init];
-                photo.thumbnail = [UIImage imageWithCGImage:result.thumbnail];
-                photo.date = [result valueForProperty:ALAssetPropertyDate];
-                [datasource addObject:photo];
-                NSLog(@"%i", [datasource count]);
+                if (result) {
+                    Photo *photo = [[Photo alloc] init];
+                    photo.thumbnail = [UIImage imageWithCGImage:result.thumbnail];
+                    photo.date = [result valueForProperty:ALAssetPropertyDate];
+                    [datasource addObject:photo];
+                    NSLog(@"%i", [datasource count]);
+                }
             }];
         } else {
             [self performSelectorOnMainThread:@selector(showPhotoCollectionController:) withObject:datasource waitUntilDone:NO];            
