@@ -75,7 +75,7 @@ To use `REPhotoCollectionController` copy the source code into your project then
 ```objective-c
 NSMutableArray *datasource = [[NSMutableArray alloc] init];
 Photo *photo = [[Photo alloc] init];
-photo.thumbnail = nil; // Set photo here
+photo.thumbnail = [UIImage imageName:@"testimage"]; // Set photo here
 photo.date = [NSDate date]; // Set date here
 [datasource addObject:photo];
 
