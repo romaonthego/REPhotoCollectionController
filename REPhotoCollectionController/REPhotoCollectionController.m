@@ -34,7 +34,6 @@
 
 @synthesize datasource = _datasource;
 @synthesize groupByDate = _groupByDate;
-@synthesize hasLoadMore;
 @synthesize thumbnailViewClass = _thumbnailViewClass;
 
 - (void)reloadData
@@ -85,7 +84,7 @@
 #pragma mark -
 #pragma mark UITableViewController functions
 
-- (void)setDatasource:(NSArray *)datasource
+- (void)setDatasource:(NSMutableArray *)datasource
 {
     _datasource = datasource;
     [self reloadData];
@@ -106,7 +105,7 @@
 {
     self = [self initWithStyle:UITableViewStylePlain];
     if (self) {
-        self.datasource = datasource;
+        self.datasource = [NSMutableArray arrayWithArray:datasource];
     }
     return self;
 }
@@ -133,13 +132,6 @@
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
     REPhotoGroup *group = (REPhotoGroup *)[ds objectAtIndex:section];
-    
-    if ([ds count] - 1 == section && hasLoadMore) {
-        int count = ceil((double) [group.items count] / 4);
-        if ([group.items count] < count * 4)
-            return count - 1;
-    }
-    
     return ceil([group.items count] / 4.0f);
 }
 

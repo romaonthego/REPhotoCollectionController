@@ -9,6 +9,10 @@
 #import <UIKit/UIKit.h>
 #import <AssetsLibrary/AssetsLibrary.h>
 
-@interface DemoViewController : UIViewController
+@class REPhotoCollectionController;
+
+@interface DemoViewController : UIViewController {
+    REPhotoCollectionController *photoCollectionController;
+}
 
 @end

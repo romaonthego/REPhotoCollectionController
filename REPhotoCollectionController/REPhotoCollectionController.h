@@ -31,8 +31,7 @@
     NSMutableArray *ds;
 }
 
-@property (nonatomic, readwrite) BOOL hasLoadMore;
-@property (nonatomic, strong, setter = setDatasource:) NSArray *datasource;
+@property (nonatomic, strong, setter = setDatasource:) NSMutableArray *datasource;
 @property (nonatomic, readwrite) BOOL groupByDate;
 @property (nonatomic, readwrite) Class thumbnailViewClass;
 

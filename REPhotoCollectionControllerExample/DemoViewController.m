@@ -52,16 +52,45 @@
 
 - (void)testButtonPressed
 {
-    REPhotoCollectionController *photoCollectionController = [[REPhotoCollectionController alloc] initWithDatasource:[self prepareDatasource]];
+    photoCollectionController = [[REPhotoCollectionController alloc] initWithDatasource:[self prepareDatasource]];
     photoCollectionController.title = @"Photos";
     photoCollectionController.thumbnailViewClass = [ThumbnailView class];
     
     [self.navigationController pushViewController:photoCollectionController animated:YES];
 }
 
+- (void)loadMoreButtonPressed
+{
+    [photoCollectionController.datasource addObject:[Photo photoWithURLString:@"http://distilleryimage0.s3.amazonaws.com/7496fb80b34611e188131231381b5c25_5.jpg"
+                                                                         date:[self dateFromString:@"06/10/2012"]]];
+    [photoCollectionController.datasource addObject:[Photo photoWithURLString:@"http://distilleryimage11.s3.amazonaws.com/8163d08eb0c311e1b10e123138105d6b_5.jpg"
+                                                                         date:[self dateFromString:@"06/11/2012"]]];
+    [photoCollectionController.datasource addObject:[Photo photoWithURLString:@"http://distilleryimage0.s3.amazonaws.com/4a5ba322b12311e1989612313815112c_5.jpg"
+                                                                         date:[self dateFromString:@"05/12/2012"]]];
+    [photoCollectionController reloadData];
+}
+
+- (void)test2ButtonPressed
+{
+    photoCollectionController = [[REPhotoCollectionController alloc] initWithDatasource:[self prepareDatasource]];
+    photoCollectionController.title = @"Photos";
+    photoCollectionController.thumbnailViewClass = [ThumbnailView class];
+    
+    // Load More button test
+    UIButton *loadMoreButton = [UIButton buttonWithType:UIButtonTypeRoundedRect];
+    loadMoreButton.frame = CGRectMake(10, 10, 290, 44);
+    [loadMoreButton setTitle:@"Load more" forState:UIControlStateNormal];
+    [loadMoreButton addTarget:self action:@selector(loadMoreButtonPressed) forControlEvents:UIControlEventTouchUpInside];
+    UIView *footerView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 320, 64)];
+    [footerView addSubview:loadMoreButton];
+    photoCollectionController.tableView.tableFooterView = footerView;
+    
+    [self.navigationController pushViewController:photoCollectionController animated:YES];
+}
+
 - (void)showPhotoCollectionController:(NSArray *)datasource
 {
-    REPhotoCollectionController *photoCollectionController = [[REPhotoCollectionController alloc] initWithDatasource:datasource];
+    photoCollectionController = [[REPhotoCollectionController alloc] initWithDatasource:datasource];
     photoCollectionController.title = @"Photos";
     photoCollectionController.thumbnailViewClass = [ThumbnailView class];
     [self.navigationController pushViewController:photoCollectionController animated:YES];
@@ -103,8 +132,14 @@
         [testButton addTarget:self action:@selector(testButtonPressed) forControlEvents:UIControlEventTouchUpInside];
         [self.view addSubview:testButton];
         
+        testButton = [UIButton buttonWithType:UIButtonTypeRoundedRect];
+        testButton.frame = CGRectMake(10, 64, 300, 44);
+        [testButton setTitle:@"Test + Load More" forState:UIControlStateNormal];
+        [testButton addTarget:self action:@selector(test2ButtonPressed) forControlEvents:UIControlEventTouchUpInside];
+        [self.view addSubview:testButton];
+        
         UIButton *cameraRollButton = [UIButton buttonWithType:UIButtonTypeRoundedRect];
-        cameraRollButton.frame = CGRectMake(10, 64, 300, 44);
+        cameraRollButton.frame = CGRectMake(10, 118, 300, 44);
         [cameraRollButton setTitle:@"Camera Roll" forState:UIControlStateNormal];
         [cameraRollButton addTarget:self action:@selector(cameraRollButtonPressed) forControlEvents:UIControlEventTouchUpInside];
         [self.view addSubview:cameraRollButton];
