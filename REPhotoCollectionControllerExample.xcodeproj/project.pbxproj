@@ -115,9 +115,9 @@
 		309E8F7615C38020008FFC1F /* REPhotoCollectionControllerExample */ = {
 			isa = PBXGroup;
 			children = (
+				309E8F7715C38020008FFC1F /* Supporting Files */,
 				309E8F7F15C38020008FFC1F /* AppDelegate.h */,
 				309E8F8015C38020008FFC1F /* AppDelegate.m */,
-				309E8F7715C38020008FFC1F /* Supporting Files */,
 				30736BE415C3880C00867503 /* DemoViewController.h */,
 				30736BE515C3880C00867503 /* DemoViewController.m */,
 				30736BF415C38FF900867503 /* Photo.h */,
