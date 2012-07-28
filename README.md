@@ -17,7 +17,7 @@ Build and run the `REPhotoCollectionController` project in Xcode to see `REPhoto
 
 ## Installation
 
-1. Clone the KTPhotoBrowser git repository: `git clone https://github.com/romaonthego/REPhotoCollectionController.git`.
+1. Clone the git repository: `git clone https://github.com/romaonthego/REPhotoCollectionController.git`.
 2. Example project requires 2 submodules: [EGOCache](https://github.com/enormego/EGOCache) and [EGOImageLoading](https://github.com/enormego/EGOImageLoading), so the next step is to update submodules: `git submodule init && git submodule update && git submodule status`
 
 ## Using REPhotoCollectionController
