@@ -24,7 +24,7 @@ Build and run the `REPhotoCollectionController` project in Xcode to see `REPhoto
 
 To use `REPhotoCollectionController` copy the source code into your project then add photo objects to a data source class for your photos. Here is how:
 
-1. Add a new class to your project called "Photo" or something similar. This class MUST implement the protocol **REPhotoObjectProtocol**:
+* Add a new class to your project called "Photo" or something similar. This class MUST implement the protocol **REPhotoObjectProtocol**:
 
 ```objective-c
 @protocol REPhotoObjectProtocol <NSObject>
@@ -39,8 +39,8 @@ To use `REPhotoCollectionController` copy the source code into your project then
 
 @end
 ```
-2. Implement the methods required by the protocol REPhotoObjectProtocol and implement the optional methods if needed.
-3. Add a new class to your project called "ThumbnailView", its parent class MUST be **REPhotoThumbnailView**. This class will be used a photo thumnbail representation view, you can customize it however you want, e.g. use different libraries for remote image fetching, etc. Sample goes below:
+* Implement the methods required by the protocol REPhotoObjectProtocol and implement the optional methods if needed.
+* Add a new class to your project called "ThumbnailView", its parent class MUST be **REPhotoThumbnailView**. This class will be used a photo thumnbail representation view, you can customize it however you want, e.g. use different libraries for remote image fetching, etc. Sample goes below:
 
 ```objective-c
 #import "ThumbnailView.h"
@@ -70,7 +70,7 @@ To use `REPhotoCollectionController` copy the source code into your project then
 @end
 ```
 
-4. Getting things together:
+* Getting things together:
 
 ```objective-c
 NSMutableArray *datasource = [[NSMutableArray alloc] init];
@@ -88,7 +88,7 @@ photoCollectionController.thumbnailViewClass = [ThumbnailView class];
 [self.navigationController pushViewController:photoCollectionController animated:YES];
 ```
 
-4. Use method `reloadData` to refresh datasource when you add more photo objects.
+* Use method `reloadData` to refresh datasource when you add more photo objects.
 
 ## Contact
 
