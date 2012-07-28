@@ -7,15 +7,39 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		30736BE615C3880C00867503 /* DemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 30736BE515C3880C00867503 /* DemoViewController.m */; };
+		30736BF315C38BD500867503 /* REPhotoGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = 30736BF215C38BD500867503 /* REPhotoGroup.m */; };
+		30736BF615C38FF900867503 /* Photo.m in Sources */ = {isa = PBXBuildFile; fileRef = 30736BF515C38FF900867503 /* Photo.m */; };
+		30736BF915C3993400867503 /* REPhotoThumbnailView.m in Sources */ = {isa = PBXBuildFile; fileRef = 30736BF815C3993400867503 /* REPhotoThumbnailView.m */; };
+		30736BFC15C3995400867503 /* REPhotoThumbnailsCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 30736BFB15C3995300867503 /* REPhotoThumbnailsCell.m */; };
+		30736BFF15C39FCF00867503 /* ThumbnailView.m in Sources */ = {isa = PBXBuildFile; fileRef = 30736BFE15C39FCF00867503 /* ThumbnailView.m */; };
 		309E8F7115C38020008FFC1F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 309E8F7015C38020008FFC1F /* UIKit.framework */; };
 		309E8F7315C38020008FFC1F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 309E8F7215C38020008FFC1F /* Foundation.framework */; };
 		309E8F7515C38020008FFC1F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 309E8F7415C38020008FFC1F /* CoreGraphics.framework */; };
 		309E8F7B15C38020008FFC1F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 309E8F7915C38020008FFC1F /* InfoPlist.strings */; };
 		309E8F7D15C38020008FFC1F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 309E8F7C15C38020008FFC1F /* main.m */; };
 		309E8F8115C38020008FFC1F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 309E8F8015C38020008FFC1F /* AppDelegate.m */; };
+		30CBF14815C3820A00E3BC5A /* EGOCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 30CBF14715C3820A00E3BC5A /* EGOCache.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		30CBF15415C3822100E3BC5A /* EGOImageButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 30CBF14B15C3822100E3BC5A /* EGOImageButton.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		30CBF15515C3822100E3BC5A /* EGOImageLoadConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = 30CBF14E15C3822100E3BC5A /* EGOImageLoadConnection.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		30CBF15615C3822100E3BC5A /* EGOImageLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = 30CBF15015C3822100E3BC5A /* EGOImageLoader.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		30CBF15715C3822100E3BC5A /* EGOImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 30CBF15315C3822100E3BC5A /* EGOImageView.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		30CBF15B15C3848100E3BC5A /* REPhotoCollectionController.m in Sources */ = {isa = PBXBuildFile; fileRef = 30CBF15A15C3848100E3BC5A /* REPhotoCollectionController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		30736BE415C3880C00867503 /* DemoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DemoViewController.h; sourceTree = "<group>"; };
+		30736BE515C3880C00867503 /* DemoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DemoViewController.m; sourceTree = "<group>"; };
+		30736BF115C38BD500867503 /* REPhotoGroup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = REPhotoGroup.h; sourceTree = "<group>"; };
+		30736BF215C38BD500867503 /* REPhotoGroup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = REPhotoGroup.m; sourceTree = "<group>"; };
+		30736BF415C38FF900867503 /* Photo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Photo.h; sourceTree = "<group>"; };
+		30736BF515C38FF900867503 /* Photo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Photo.m; sourceTree = "<group>"; };
+		30736BF715C3993400867503 /* REPhotoThumbnailView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = REPhotoThumbnailView.h; sourceTree = "<group>"; };
+		30736BF815C3993400867503 /* REPhotoThumbnailView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = REPhotoThumbnailView.m; sourceTree = "<group>"; };
+		30736BFA15C3995300867503 /* REPhotoThumbnailsCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = REPhotoThumbnailsCell.h; sourceTree = "<group>"; };
+		30736BFB15C3995300867503 /* REPhotoThumbnailsCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = REPhotoThumbnailsCell.m; sourceTree = "<group>"; };
+		30736BFD15C39FCF00867503 /* ThumbnailView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThumbnailView.h; sourceTree = "<group>"; };
+		30736BFE15C39FCF00867503 /* ThumbnailView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThumbnailView.m; sourceTree = "<group>"; };
 		309E8F6C15C38020008FFC1F /* REPhotoCollectionControllerExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = REPhotoCollectionControllerExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		309E8F7015C38020008FFC1F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		309E8F7215C38020008FFC1F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -26,6 +50,19 @@
 		309E8F7E15C38020008FFC1F /* REPhotoCollectionControllerExample-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "REPhotoCollectionControllerExample-Prefix.pch"; sourceTree = "<group>"; };
 		309E8F7F15C38020008FFC1F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		309E8F8015C38020008FFC1F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		30CBF14615C3820A00E3BC5A /* EGOCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EGOCache.h; sourceTree = "<group>"; };
+		30CBF14715C3820A00E3BC5A /* EGOCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EGOCache.m; sourceTree = "<group>"; };
+		30CBF14A15C3822100E3BC5A /* EGOImageButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EGOImageButton.h; sourceTree = "<group>"; };
+		30CBF14B15C3822100E3BC5A /* EGOImageButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EGOImageButton.m; sourceTree = "<group>"; };
+		30CBF14D15C3822100E3BC5A /* EGOImageLoadConnection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EGOImageLoadConnection.h; sourceTree = "<group>"; };
+		30CBF14E15C3822100E3BC5A /* EGOImageLoadConnection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EGOImageLoadConnection.m; sourceTree = "<group>"; };
+		30CBF14F15C3822100E3BC5A /* EGOImageLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EGOImageLoader.h; sourceTree = "<group>"; };
+		30CBF15015C3822100E3BC5A /* EGOImageLoader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EGOImageLoader.m; sourceTree = "<group>"; };
+		30CBF15215C3822100E3BC5A /* EGOImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EGOImageView.h; sourceTree = "<group>"; };
+		30CBF15315C3822100E3BC5A /* EGOImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EGOImageView.m; sourceTree = "<group>"; };
+		30CBF15915C3848100E3BC5A /* REPhotoCollectionController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = REPhotoCollectionController.h; sourceTree = "<group>"; };
+		30CBF15A15C3848100E3BC5A /* REPhotoCollectionController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = REPhotoCollectionController.m; sourceTree = "<group>"; };
+		30CBF15C15C384D200E3BC5A /* REPhotoObjectProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = REPhotoObjectProtocol.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +82,8 @@
 		309E8F6115C38020008FFC1F = {
 			isa = PBXGroup;
 			children = (
+				30CBF15815C3822E00E3BC5A /* REPhotoCollectionController */,
+				30CBF14315C3820000E3BC5A /* External */,
 				309E8F7615C38020008FFC1F /* REPhotoCollectionControllerExample */,
 				309E8F6F15C38020008FFC1F /* Frameworks */,
 				309E8F6D15C38020008FFC1F /* Products */,
@@ -75,6 +114,12 @@
 				309E8F7F15C38020008FFC1F /* AppDelegate.h */,
 				309E8F8015C38020008FFC1F /* AppDelegate.m */,
 				309E8F7715C38020008FFC1F /* Supporting Files */,
+				30736BE415C3880C00867503 /* DemoViewController.h */,
+				30736BE515C3880C00867503 /* DemoViewController.m */,
+				30736BF415C38FF900867503 /* Photo.h */,
+				30736BF515C38FF900867503 /* Photo.m */,
+				30736BFD15C39FCF00867503 /* ThumbnailView.h */,
+				30736BFE15C39FCF00867503 /* ThumbnailView.m */,
 			);
 			path = REPhotoCollectionControllerExample;
 			sourceTree = "<group>";
@@ -88,6 +133,75 @@
 				309E8F7E15C38020008FFC1F /* REPhotoCollectionControllerExample-Prefix.pch */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		30CBF14315C3820000E3BC5A /* External */ = {
+			isa = PBXGroup;
+			children = (
+				30CBF14915C3822100E3BC5A /* EGOImageButton */,
+				30CBF14C15C3822100E3BC5A /* EGOImageLoader */,
+				30CBF15115C3822100E3BC5A /* EGOImageView */,
+				30CBF14515C3820A00E3BC5A /* EGOCache */,
+			);
+			name = External;
+			sourceTree = "<group>";
+		};
+		30CBF14515C3820A00E3BC5A /* EGOCache */ = {
+			isa = PBXGroup;
+			children = (
+				30CBF14615C3820A00E3BC5A /* EGOCache.h */,
+				30CBF14715C3820A00E3BC5A /* EGOCache.m */,
+			);
+			name = EGOCache;
+			path = External/EGOCache;
+			sourceTree = "<group>";
+		};
+		30CBF14915C3822100E3BC5A /* EGOImageButton */ = {
+			isa = PBXGroup;
+			children = (
+				30CBF14A15C3822100E3BC5A /* EGOImageButton.h */,
+				30CBF14B15C3822100E3BC5A /* EGOImageButton.m */,
+			);
+			name = EGOImageButton;
+			path = External/EGOImageLoading/EGOImageButton;
+			sourceTree = "<group>";
+		};
+		30CBF14C15C3822100E3BC5A /* EGOImageLoader */ = {
+			isa = PBXGroup;
+			children = (
+				30CBF14D15C3822100E3BC5A /* EGOImageLoadConnection.h */,
+				30CBF14E15C3822100E3BC5A /* EGOImageLoadConnection.m */,
+				30CBF14F15C3822100E3BC5A /* EGOImageLoader.h */,
+				30CBF15015C3822100E3BC5A /* EGOImageLoader.m */,
+			);
+			name = EGOImageLoader;
+			path = External/EGOImageLoading/EGOImageLoader;
+			sourceTree = "<group>";
+		};
+		30CBF15115C3822100E3BC5A /* EGOImageView */ = {
+			isa = PBXGroup;
+			children = (
+				30CBF15215C3822100E3BC5A /* EGOImageView.h */,
+				30CBF15315C3822100E3BC5A /* EGOImageView.m */,
+			);
+			name = EGOImageView;
+			path = External/EGOImageLoading/EGOImageView;
+			sourceTree = "<group>";
+		};
+		30CBF15815C3822E00E3BC5A /* REPhotoCollectionController */ = {
+			isa = PBXGroup;
+			children = (
+				30CBF15915C3848100E3BC5A /* REPhotoCollectionController.h */,
+				30CBF15A15C3848100E3BC5A /* REPhotoCollectionController.m */,
+				30CBF15C15C384D200E3BC5A /* REPhotoObjectProtocol.h */,
+				30736BF115C38BD500867503 /* REPhotoGroup.h */,
+				30736BF215C38BD500867503 /* REPhotoGroup.m */,
+				30736BFA15C3995300867503 /* REPhotoThumbnailsCell.h */,
+				30736BFB15C3995300867503 /* REPhotoThumbnailsCell.m */,
+				30736BF715C3993400867503 /* REPhotoThumbnailView.h */,
+				30736BF815C3993400867503 /* REPhotoThumbnailView.m */,
+			);
+			path = REPhotoCollectionController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -154,6 +268,18 @@
 			files = (
 				309E8F7D15C38020008FFC1F /* main.m in Sources */,
 				309E8F8115C38020008FFC1F /* AppDelegate.m in Sources */,
+				30CBF14815C3820A00E3BC5A /* EGOCache.m in Sources */,
+				30CBF15415C3822100E3BC5A /* EGOImageButton.m in Sources */,
+				30CBF15515C3822100E3BC5A /* EGOImageLoadConnection.m in Sources */,
+				30CBF15615C3822100E3BC5A /* EGOImageLoader.m in Sources */,
+				30CBF15715C3822100E3BC5A /* EGOImageView.m in Sources */,
+				30CBF15B15C3848100E3BC5A /* REPhotoCollectionController.m in Sources */,
+				30736BE615C3880C00867503 /* DemoViewController.m in Sources */,
+				30736BF315C38BD500867503 /* REPhotoGroup.m in Sources */,
+				30736BF615C38FF900867503 /* Photo.m in Sources */,
+				30736BF915C3993400867503 /* REPhotoThumbnailView.m in Sources */,
+				30736BFC15C3995400867503 /* REPhotoThumbnailsCell.m in Sources */,
+				30736BFF15C39FCF00867503 /* ThumbnailView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -261,6 +387,7 @@
 				309E8F8615C38020008FFC1F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
