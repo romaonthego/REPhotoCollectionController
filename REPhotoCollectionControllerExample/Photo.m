@@ -10,7 +10,7 @@
 
 @implementation Photo
 
-@synthesize thumbnailURL = _thumbnailURL, date = _date;
+@synthesize thumbnailURL = _thumbnailURL, date = _date, thumbnail = _thumbnail;
 
 - (id)initWithThumbnailURL:(NSURL *)thumbnailURL date:(NSDate *)date
 {

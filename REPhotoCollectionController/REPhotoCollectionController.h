@@ -20,5 +20,6 @@
 @property (nonatomic, readwrite) Class thumbnailViewClass;
 
 - (id)initWithDatasource:(NSArray *)datasource;
+- (void)reloadData;
 
 @end

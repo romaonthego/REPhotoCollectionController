@@ -12,7 +12,11 @@
 
 - (void)setPhoto:(NSObject <REPhotoObjectProtocol> *)photo
 {
-    imageButton.imageURL = photo.thumbnailURL;
+    if (photo.thumbnailURL) {
+        imageButton.imageURL = photo.thumbnailURL;
+    } else {
+        [imageButton setImage:photo.thumbnail forState:UIControlStateNormal];
+    }
 }
 
 - (id)initWithFrame:(CGRect)frame

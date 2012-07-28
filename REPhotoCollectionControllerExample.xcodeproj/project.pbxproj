@@ -13,6 +13,7 @@
 		30736BF915C3993400867503 /* REPhotoThumbnailView.m in Sources */ = {isa = PBXBuildFile; fileRef = 30736BF815C3993400867503 /* REPhotoThumbnailView.m */; };
 		30736BFC15C3995400867503 /* REPhotoThumbnailsCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 30736BFB15C3995300867503 /* REPhotoThumbnailsCell.m */; };
 		30736BFF15C39FCF00867503 /* ThumbnailView.m in Sources */ = {isa = PBXBuildFile; fileRef = 30736BFE15C39FCF00867503 /* ThumbnailView.m */; };
+		30736C0115C4450200867503 /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30736C0015C4450200867503 /* AssetsLibrary.framework */; };
 		309E8F7115C38020008FFC1F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 309E8F7015C38020008FFC1F /* UIKit.framework */; };
 		309E8F7315C38020008FFC1F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 309E8F7215C38020008FFC1F /* Foundation.framework */; };
 		309E8F7515C38020008FFC1F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 309E8F7415C38020008FFC1F /* CoreGraphics.framework */; };
@@ -40,6 +41,7 @@
 		30736BFB15C3995300867503 /* REPhotoThumbnailsCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = REPhotoThumbnailsCell.m; sourceTree = "<group>"; };
 		30736BFD15C39FCF00867503 /* ThumbnailView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThumbnailView.h; sourceTree = "<group>"; };
 		30736BFE15C39FCF00867503 /* ThumbnailView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThumbnailView.m; sourceTree = "<group>"; };
+		30736C0015C4450200867503 /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
 		309E8F6C15C38020008FFC1F /* REPhotoCollectionControllerExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = REPhotoCollectionControllerExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		309E8F7015C38020008FFC1F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		309E8F7215C38020008FFC1F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -70,6 +72,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				30736C0115C4450200867503 /* AssetsLibrary.framework in Frameworks */,
 				309E8F7115C38020008FFC1F /* UIKit.framework in Frameworks */,
 				309E8F7315C38020008FFC1F /* Foundation.framework in Frameworks */,
 				309E8F7515C38020008FFC1F /* CoreGraphics.framework in Frameworks */,
@@ -101,6 +104,7 @@
 		309E8F6F15C38020008FFC1F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				30736C0015C4450200867503 /* AssetsLibrary.framework */,
 				309E8F7015C38020008FFC1F /* UIKit.framework */,
 				309E8F7215C38020008FFC1F /* Foundation.framework */,
 				309E8F7415C38020008FFC1F /* CoreGraphics.framework */,

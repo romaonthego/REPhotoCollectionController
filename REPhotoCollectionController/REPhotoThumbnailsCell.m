@@ -60,6 +60,8 @@
                 if ([thumbnailView respondsToSelector:@selector(setPhoto:)]) {
                     [thumbnailView setPhoto:[photos objectAtIndex:thumbnailView.tag]];
                 }
+            } else {
+                [thumbnailView setHidden:YES];
             }
         }
     }

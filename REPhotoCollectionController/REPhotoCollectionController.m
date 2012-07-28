@@ -29,7 +29,7 @@
     return nil;
 }
 
-- (void)rebuild
+- (void)reloadData
 {
     if (!_groupByDate) {
         REPhotoGroup *group = [[REPhotoGroup alloc] init];
@@ -74,7 +74,7 @@
 - (void)setDatasource:(NSArray *)datasource
 {
     _datasource = datasource;
-    [self rebuild];
+    [self reloadData];
 }
 
 - (id)initWithStyle:(UITableViewStyle)style
