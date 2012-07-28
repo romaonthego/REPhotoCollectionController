@@ -71,6 +71,7 @@ To use `REPhotoCollectionController` copy the source code into your project then
 ```
 
 4. Getting things together:
+
 ```objective-c
 NSMutableArray *datasource = [[NSMutableArray alloc] init];
 Photo *photo = [[Photo alloc] init];
