@@ -28,7 +28,7 @@
 #import "REPhotoGroup.h"
 
 @interface REPhotoCollectionController : UITableViewController {
-    NSMutableArray *ds;
+    NSMutableArray *_ds;
 }
 
 @property (nonatomic, strong, setter = setDatasource:) NSMutableArray *datasource;

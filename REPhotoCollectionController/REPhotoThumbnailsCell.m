@@ -36,13 +36,12 @@
     self = [self initWithStyle:style reuseIdentifier:reuseIdentifier];
     if (self) {
         _thumbnailViewClass = thumbnailViewClass;
+        _photos = [[NSMutableArray alloc] init];
         for (int i=0; i < 4; i++) {
             REPhotoThumbnailView *thumbnailView = [[[_thumbnailViewClass class] alloc] initWithFrame:CGRectMake(6+(72 * i + 6 * i), 6, 72, 72)];
             [thumbnailView setHidden:YES];
             thumbnailView.tag = i;
             [self addSubview:thumbnailView];
-            
-            photos = [[NSMutableArray alloc] init];
         }
     }
     return self;
@@ -59,12 +58,12 @@
 
 - (void)removeAllPhotos
 {
-    [photos removeAllObjects];
+    [_photos removeAllObjects];
 }
 
 - (void)addPhoto:(NSObject<REPhotoObjectProtocol> *)photo
 {
-    [photos addObject:photo];
+    [_photos addObject:photo];
 }
 
 - (void)refresh
@@ -72,10 +71,10 @@
     for (UIView *view in self.subviews) {
         if ([view isKindOfClass:[REPhotoThumbnailView class]]) {
             REPhotoThumbnailView *thumbnailView = (REPhotoThumbnailView *)view;
-            if (thumbnailView.tag < [photos count]) {
+            if (thumbnailView.tag < [_photos count]) {
                 [thumbnailView setHidden:NO];
                 if ([thumbnailView respondsToSelector:@selector(setPhoto:)]) {
-                    [thumbnailView setPhoto:[photos objectAtIndex:thumbnailView.tag]];
+                    [thumbnailView setPhoto:[_photos objectAtIndex:thumbnailView.tag]];
                 }
             } else {
                 [thumbnailView setHidden:YES];
