@@ -26,6 +26,7 @@
 		30CBF15615C3822100E3BC5A /* EGOImageLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = 30CBF15015C3822100E3BC5A /* EGOImageLoader.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		30CBF15715C3822100E3BC5A /* EGOImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 30CBF15315C3822100E3BC5A /* EGOImageView.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		30CBF15B15C3848100E3BC5A /* REPhotoCollectionController.m in Sources */ = {isa = PBXBuildFile; fileRef = 30CBF15A15C3848100E3BC5A /* REPhotoCollectionController.m */; };
+		30D8DFEC1633163600FC85A8 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 30D8DFEB1633163600FC85A8 /* Default-568h@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -65,6 +66,7 @@
 		30CBF15915C3848100E3BC5A /* REPhotoCollectionController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = REPhotoCollectionController.h; sourceTree = "<group>"; };
 		30CBF15A15C3848100E3BC5A /* REPhotoCollectionController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = REPhotoCollectionController.m; sourceTree = "<group>"; };
 		30CBF15C15C384D200E3BC5A /* REPhotoObjectProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = REPhotoObjectProtocol.h; sourceTree = "<group>"; };
+		30D8DFEB1633163600FC85A8 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-568h@2x.png"; path = "../Default-568h@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -131,6 +133,7 @@
 		309E8F7715C38020008FFC1F /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				30D8DFEB1633163600FC85A8 /* Default-568h@2x.png */,
 				309E8F7815C38020008FFC1F /* REPhotoCollectionControllerExample-Info.plist */,
 				309E8F7915C38020008FFC1F /* InfoPlist.strings */,
 				309E8F7C15C38020008FFC1F /* main.m */,
@@ -260,6 +263,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				309E8F7B15C38020008FFC1F /* InfoPlist.strings in Resources */,
+				30D8DFEC1633163600FC85A8 /* Default-568h@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
