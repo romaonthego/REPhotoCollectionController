@@ -28,7 +28,7 @@
 #import "REPhotoObjectProtocol.h"
 
 @interface REPhotoThumbnailsCell : UITableViewCell {
-    NSMutableArray *photos;
+    NSMutableArray *_photos;
 }
 
 @property (nonatomic, readwrite) Class thumbnailViewClass;

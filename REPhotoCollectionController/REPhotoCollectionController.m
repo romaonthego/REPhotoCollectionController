@@ -42,11 +42,11 @@
         REPhotoGroup *group = [[REPhotoGroup alloc] init];
         group.month = 1;
         group.year = 1900;
-        [ds removeAllObjects];
+        [_ds removeAllObjects];
         for (NSObject *object in _datasource) {
             [group.items addObject:object];
         }
-        [ds addObject:group];
+        [_ds addObject:group];
         return;
     }
     NSArray *sorted = [_datasource sortedArrayUsingComparator:^NSComparisonResult(id obj1, id obj2) {
@@ -54,7 +54,7 @@
         NSObject <REPhotoObjectProtocol> *photo2 = obj2;
         return ![photo1.date compare:photo2.date];
     }];
-    [ds removeAllObjects];
+    [_ds removeAllObjects];
     for (NSObject *object in sorted) {
         NSObject <REPhotoObjectProtocol> *photo = (NSObject <REPhotoObjectProtocol> *)object;
         NSDateComponents *components = [[NSCalendar currentCalendar] components:NSDayCalendarUnit |
@@ -62,7 +62,7 @@
         NSUInteger month = [components month];
         NSUInteger year = [components year];
         REPhotoGroup *group = ^REPhotoGroup *{
-            for (REPhotoGroup *group in ds) {
+            for (REPhotoGroup *group in _ds) {
                 if (group.month == month && group.year == year)
                     return group;
             }
@@ -73,7 +73,7 @@
             group.month = month;
             group.year = year;
             [group.items addObject:photo];
-            [ds addObject:group];
+            [_ds addObject:group];
         } else {
             [group.items addObject:photo];
         }
@@ -94,7 +94,7 @@
 {
     self = [super initWithStyle:style];
     if (self) {
-        ds = [[NSMutableArray alloc] init];
+        _ds = [[NSMutableArray alloc] init];
         self.groupByDate = YES;
         self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
     }
@@ -120,18 +120,18 @@
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
-    if ([ds count] == 0) return 0;
+    if ([_ds count] == 0) return 0;
     if (!_groupByDate) return 1;
     
-    if ([self tableView:self.tableView numberOfRowsInSection:[ds count] - 1] == 0) {
-        return [ds count] - 1;
+    if ([self tableView:self.tableView numberOfRowsInSection:[_ds count] - 1] == 0) {
+        return [_ds count] - 1;
     }
-    return [ds count];
+    return [_ds count];
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    REPhotoGroup *group = (REPhotoGroup *)[ds objectAtIndex:section];
+    REPhotoGroup *group = (REPhotoGroup *)[_ds objectAtIndex:section];
     return ceil([group.items count] / 4.0f);
 }
 
@@ -144,7 +144,7 @@
         cell = [[REPhotoThumbnailsCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier thumbnailViewClass:_thumbnailViewClass];
     }
     
-    REPhotoGroup *group = (REPhotoGroup *)[ds objectAtIndex:indexPath.section];
+    REPhotoGroup *group = (REPhotoGroup *)[_ds objectAtIndex:indexPath.section];
     
     int startIndex = indexPath.row * 4;
     int endIndex = startIndex + 4;
@@ -168,7 +168,7 @@
 
 - (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section
 {
-    REPhotoGroup *group = (REPhotoGroup *)[ds objectAtIndex:section];
+    REPhotoGroup *group = (REPhotoGroup *)[_ds objectAtIndex:section];
     
     NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
     [dateFormatter setDateFormat:@"yyyy-MM-dd"];
