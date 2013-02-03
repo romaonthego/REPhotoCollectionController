@@ -24,7 +24,6 @@
 //
 
 #import "REPhotoThumbnailsCell.h"
-#import "EGOImageButton.h"
 
 @implementation REPhotoThumbnailsCell
 
