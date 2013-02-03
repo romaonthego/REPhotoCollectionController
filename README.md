@@ -4,21 +4,49 @@
 ![Screenshot of REPhotoCollectionController](https://github.com/romaonthego/REPhotoCollectionController/raw/master/Screenshot.png "REPhotoCollectionController Screenshot")
 
 ## Requirements
-* Xcode 4.3 or higher
+* Xcode 4.5 or higher
 * Apple LLVM compiler
-* iOS 4 or higher
+* iOS 5.0 or higher
 * ARC
-
-If you are not using ARC in your project, add `-fobjc-arc` as a compiler flag for all the files in this project.
 
 ## Demo
 
-Build and run the `REPhotoCollectionController` project in Xcode to see `REPhotoCollectionController` in action.
+First, you need to install dependencies using [CocoaPods](http://cocoapods.org/) package manager in the demo project:
+
+``` bash
+$ pod install
+```
+
+After that, build and run the `REPhotoCollectionControllerExample` project in Xcode to see `REPhotoCollectionController` in action.
+
+If you don't have CocoaPods installed, check section "Installation" below.
 
 ## Installation
 
-1. Clone the git repository: `git clone https://github.com/romaonthego/REPhotoCollectionController.git`.
-2. Example project requires 2 submodules: [EGOCache](https://github.com/enormego/EGOCache) and [EGOImageLoading](https://github.com/enormego/EGOImageLoading), so the next step is to update submodules: `git submodule init && git submodule update && git submodule status`
+The recommended approach for installating REActivityViewController is via the [CocoaPods](http://cocoapods.org/) package manager, as it provides flexible dependency management and dead simple installation.
+
+Install CocoaPods if not already available:
+
+``` bash
+$ [sudo] gem install cocoapods
+$ pod setup
+```
+
+Edit your Podfile and add `REPhotoCollectionController`:
+
+``` bash
+$ edit Podfile
+platform :ios, '5.0'
+pod 'REActivityViewController', '~> 1.0'
+```
+
+Install into your Xcode project:
+
+``` bash
+$ pod install
+```
+
+Add `#include "REPhotoCollectionController.h"` to the top of classes that will use it.
 
 ## Using REPhotoCollectionController
 
@@ -101,7 +129,7 @@ Roman Efimov
 
 REPhotoCollectionController is available under the MIT license.
 
-Copyright © 2012 Roman Efimov.
+Copyright © 2013 Roman Efimov.
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 
