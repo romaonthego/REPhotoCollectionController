@@ -25,7 +25,6 @@
 
 #import <UIKit/UIKit.h>
 #import "REPhotoObjectProtocol.h"
-#import "EGOImageButton.h"
 
 @interface REPhotoThumbnailView : UIView
 
