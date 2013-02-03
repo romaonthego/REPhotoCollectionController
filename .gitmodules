@@ -1,6 +1,0 @@
-[submodule "External/EGOImageLoading"]
-	path = External/EGOImageLoading
-	url = git://github.com/enormego/EGOImageLoading.git
-[submodule "External/EGOCache"]
-	path = External/EGOCache
-	url = git://github.com/enormego/EGOCache.git
