@@ -5,7 +5,7 @@ Pod::Spec.new do |s|
   s.homepage    = 'https://github.com/romaonthego/REPhotoCollectionController'
   s.summary     = 'A simple photo thumbnail viewer for the iOS that groups photos by date.'
   s.source      = { :git => 'https://github.com/romaonthego/REPhotoCollectionController.git',
-                    :commit => '39a90894523f9f352d38defdc937198b6500279b' }
+                    :tag => '1.0' }
   s.license     = { :type => "MIT", :file => "LICENSE" }
 
   s.platform = :ios, '5.0'
