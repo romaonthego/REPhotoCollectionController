@@ -1,5 +1,6 @@
 # REPhotoCollectionController
-###REPhotoCollectionController is a simple photo thumbnail viewer for the iOS that groups photos by date.
+
+REPhotoCollectionController is a simple photo thumbnail viewer for the iOS that groups photos by date.
 
 ![Screenshot of REPhotoCollectionController](https://github.com/romaonthego/REPhotoCollectionController/raw/master/Screenshot.png "REPhotoCollectionController Screenshot")
 
